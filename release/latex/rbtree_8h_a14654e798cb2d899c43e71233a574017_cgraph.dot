@@ -1,0 +1,40 @@
+digraph "isInserted"
+{
+  edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
+  node [fontname="Verdana",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="isInserted",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="rotateLeft",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rbtree_8h.html#a9cfb84db458308313c0af58f6604eb70",tooltip="Rotates the tree left in the node position. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="rotateRight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rbtree_8h.html#ab86ad84d2aac4d869329b8fd9e6367ba",tooltip="Rotates the tree right in the node position. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="printRBTreePLR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rbtree_8h.html#a4ffb5c0698ec53f7b1d74ee2313c0c26",tooltip="Prints the rbtree in preorder left right. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="printTreePLR",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#afca91c531c7215b2c2403b5c7a925bee",tooltip="Prints the node in preorder left right. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="findInorderSuccessor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rbtree_8h.html#aab24dcc91b3e3441809f840689b348a8",tooltip="Find inoreder successor of a node. "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="findNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rbtree_8h.html#ad35fd18ab1c39323b187402dff42b7a0",tooltip="Finds the pointer to a node. "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="insertBST",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#a99af44e3e14587394b24a1b545d7da0d",tooltip="Inserts as if into a BST tree. "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="insert",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#a9840599c6c98ea0e5d1bb48f56b3c353",tooltip="Inserts a node into a RBTree. "];
+  Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="fixViolation",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#a818edf049469623dfa9032500389d38e",tooltip="Fixes the violation after inserting a node. "];
+  Node10 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="repairInLoop",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#aee478c60a6e2a7aa19df9e768af98164",tooltip="Repairs in loop the violation after deleting a node. "];
+  Node11 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="deleteNode",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#af14edce38e861d2d638f715d6eb6a788",tooltip="Deletes the value from the tree. "];
+  Node12 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+}

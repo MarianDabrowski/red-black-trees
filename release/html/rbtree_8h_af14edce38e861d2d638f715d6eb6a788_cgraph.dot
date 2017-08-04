@@ -1,0 +1,16 @@
+digraph "deleteNode"
+{
+  edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
+  node [fontname="Verdana",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="deleteNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node2 [label="findNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rbtree_8h.html#ad35fd18ab1c39323b187402dff42b7a0",tooltip="Finds the pointer to a node. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node3 [label="findInorderSuccessor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rbtree_8h.html#aab24dcc91b3e3441809f840689b348a8",tooltip="Find inoreder successor of a node. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node4 [label="setColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$node_8h.html#af858813025ee8f0bc0212e8b911ed6b8",tooltip="Sets the color of a node. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node5 [label="repairInLoop",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#aee478c60a6e2a7aa19df9e768af98164",tooltip="Repairs in loop the violation after deleting a node. "];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+}

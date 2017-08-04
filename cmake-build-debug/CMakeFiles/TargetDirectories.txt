@@ -1,0 +1,4 @@
+/media/marian/352A14ADEA097CBE/working environment/summerStudies/Algorithms/Cormen/Part3/chapter13/RedBlackTreeImplementation/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/marian/352A14ADEA097CBE/working environment/summerStudies/Algorithms/Cormen/Part3/chapter13/RedBlackTreeImplementation/cmake-build-debug/CMakeFiles/doc.dir
+/media/marian/352A14ADEA097CBE/working environment/summerStudies/Algorithms/Cormen/Part3/chapter13/RedBlackTreeImplementation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/marian/352A14ADEA097CBE/working environment/summerStudies/Algorithms/Cormen/Part3/chapter13/RedBlackTreeImplementation/cmake-build-debug/CMakeFiles/rbTree.dir

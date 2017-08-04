@@ -1,0 +1,371 @@
+\hypertarget{rbtree_8h}{}\section{rbtree.\+h File Reference}
+\label{rbtree_8h}\index{rbtree.\+h@{rbtree.\+h}}
+
+
+Interface of Red\+Black tree.  
+
+
+{\ttfamily \#include \char`\"{}node.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+Include dependency graph for rbtree.\+h\+:
+% FIG 0
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRBTree}{R\+B\+Tree}
+\begin{DoxyCompactList}\small\item\em Structure that represents the red black tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structRBTree}{R\+B\+Tree} \hyperlink{rbtree_8h_a79e5a2fc7f14e744b3321d4db521f145}{R\+B\+Tree}\hypertarget{rbtree_8h_a79e5a2fc7f14e744b3321d4db521f145}{}\label{rbtree_8h_a79e5a2fc7f14e744b3321d4db521f145}
+
+\begin{DoxyCompactList}\small\item\em Structure that represents the red black tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structRBTree}{R\+B\+Tree} $\ast$ \hyperlink{rbtree_8h_af924e3dc59400b101a98d70c13fca982}{new\+R\+B\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new instance of a \hyperlink{structRBTree}{R\+B\+Tree}. \end{DoxyCompactList}\item 
+static bool \hyperlink{rbtree_8h_ac50136d3c440fdfe2a043e18039aee7b}{is\+Empty} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree)
+\begin{DoxyCompactList}\small\item\em Checks if the \hyperlink{structRBTree}{R\+B\+Tree} is empty. \end{DoxyCompactList}\item 
+static bool \hyperlink{rbtree_8h_a14654e798cb2d899c43e71233a574017}{is\+Inserted} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree, \hyperlink{structNode}{Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Checks if a node was inserted into a \hyperlink{structRBTree}{R\+B\+Tree}. \end{DoxyCompactList}\item 
+void \hyperlink{rbtree_8h_a9cfb84db458308313c0af58f6604eb70}{rotate\+Left} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree, \hyperlink{structNode}{Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Rotates the tree left in the node position. \end{DoxyCompactList}\item 
+void \hyperlink{rbtree_8h_ab86ad84d2aac4d869329b8fd9e6367ba}{rotate\+Right} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree, \hyperlink{structNode}{Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Rotates the tree right in the node position. \end{DoxyCompactList}\item 
+void \hyperlink{rbtree_8h_a4ffb5c0698ec53f7b1d74ee2313c0c26}{print\+R\+B\+Tree\+P\+LR} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree)
+\begin{DoxyCompactList}\small\item\em Prints the rbtree in preorder left right. \end{DoxyCompactList}\item 
+void \hyperlink{rbtree_8h_afca91c531c7215b2c2403b5c7a925bee}{print\+Tree\+P\+LR} (\hyperlink{structNode}{Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Prints the node in preorder left right. \end{DoxyCompactList}\item 
+\hyperlink{structNode}{Node} $\ast$ \hyperlink{rbtree_8h_aab24dcc91b3e3441809f840689b348a8}{find\+Inorder\+Successor} (\hyperlink{structNode}{Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Find inoreder successor of a node. \end{DoxyCompactList}\item 
+\hyperlink{structNode}{Node} $\ast$ \hyperlink{rbtree_8h_ad35fd18ab1c39323b187402dff42b7a0}{find\+Node} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree, int value)
+\begin{DoxyCompactList}\small\item\em Finds the pointer to a node. \end{DoxyCompactList}\item 
+void \hyperlink{rbtree_8h_a99af44e3e14587394b24a1b545d7da0d}{insert\+B\+ST} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree, \hyperlink{structNode}{Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Inserts as if into a B\+ST tree. \end{DoxyCompactList}\item 
+void \hyperlink{rbtree_8h_a9840599c6c98ea0e5d1bb48f56b3c353}{insert} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree, int value)
+\begin{DoxyCompactList}\small\item\em Inserts a node into a \hyperlink{structRBTree}{R\+B\+Tree}. \end{DoxyCompactList}\item 
+void \hyperlink{rbtree_8h_a818edf049469623dfa9032500389d38e}{fix\+Violation} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree, \hyperlink{structNode}{Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Fixes the violation after inserting a node. \end{DoxyCompactList}\item 
+void \hyperlink{rbtree_8h_aee478c60a6e2a7aa19df9e768af98164}{repair\+In\+Loop} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree, \hyperlink{structNode}{Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Repairs in loop the violation after deleting a node. \end{DoxyCompactList}\item 
+void \hyperlink{rbtree_8h_af14edce38e861d2d638f715d6eb6a788}{delete\+Node} (\hyperlink{structRBTree}{R\+B\+Tree} $\ast$rbtree, int value)
+\begin{DoxyCompactList}\small\item\em Deletes the value from the tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of Red\+Black tree. 
+
+\begin{DoxyAuthor}{Author}
+Marian Dabrowski 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{rbtree.\+h@{rbtree.\+h}!delete\+Node@{delete\+Node}}
+\index{delete\+Node@{delete\+Node}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{delete\+Node(\+R\+B\+Tree $\ast$rbtree, int value)}{deleteNode(RBTree *rbtree, int value)}}]{\setlength{\rightskip}{0pt plus 5cm}void delete\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_af14edce38e861d2d638f715d6eb6a788}{}\label{rbtree_8h_af14edce38e861d2d638f715d6eb6a788}
+
+
+Deletes the value from the tree. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & tree where the value shall be deleted from \\
+\hline
+\mbox{\tt in}  & {\em value} & value that shall be deleted \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\index{rbtree.\+h@{rbtree.\+h}!find\+Inorder\+Successor@{find\+Inorder\+Successor}}
+\index{find\+Inorder\+Successor@{find\+Inorder\+Successor}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{find\+Inorder\+Successor(\+Node $\ast$node)}{findInorderSuccessor(Node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ find\+Inorder\+Successor (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_aab24dcc91b3e3441809f840689b348a8}{}\label{rbtree_8h_aab24dcc91b3e3441809f840689b348a8}
+
+
+Find inoreder successor of a node. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em node} & node which successor we wish to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the inoreder successor 
+\end{DoxyReturn}
+\index{rbtree.\+h@{rbtree.\+h}!find\+Node@{find\+Node}}
+\index{find\+Node@{find\+Node}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{find\+Node(\+R\+B\+Tree $\ast$rbtree, int value)}{findNode(RBTree *rbtree, int value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ find\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_ad35fd18ab1c39323b187402dff42b7a0}{}\label{rbtree_8h_ad35fd18ab1c39323b187402dff42b7a0}
+
+
+Finds the pointer to a node. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & the tree to look into \\
+\hline
+\mbox{\tt in}  & {\em value} & the value to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pointer to the node with value 
+\end{DoxyReturn}
+\index{rbtree.\+h@{rbtree.\+h}!fix\+Violation@{fix\+Violation}}
+\index{fix\+Violation@{fix\+Violation}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{fix\+Violation(\+R\+B\+Tree $\ast$rbtree, Node $\ast$node)}{fixViolation(RBTree *rbtree, Node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void fix\+Violation (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree, }
+\item[{{\bf Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_a818edf049469623dfa9032500389d38e}{}\label{rbtree_8h_a818edf049469623dfa9032500389d38e}
+
+
+Fixes the violation after inserting a node. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & tree to be fixed \\
+\hline
+\mbox{\tt in}  & {\em node} & node that has been inserted \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\index{rbtree.\+h@{rbtree.\+h}!insert@{insert}}
+\index{insert@{insert}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{insert(\+R\+B\+Tree $\ast$rbtree, int value)}{insert(RBTree *rbtree, int value)}}]{\setlength{\rightskip}{0pt plus 5cm}void insert (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_a9840599c6c98ea0e5d1bb48f56b3c353}{}\label{rbtree_8h_a9840599c6c98ea0e5d1bb48f56b3c353}
+
+
+Inserts a node into a \hyperlink{structRBTree}{R\+B\+Tree}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & the tree into which we want to insert \mbox{[}in\mbox{]} value\+: value that we insert \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\index{rbtree.\+h@{rbtree.\+h}!insert\+B\+ST@{insert\+B\+ST}}
+\index{insert\+B\+ST@{insert\+B\+ST}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{insert\+B\+S\+T(\+R\+B\+Tree $\ast$rbtree, Node $\ast$node)}{insertBST(RBTree *rbtree, Node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void insert\+B\+ST (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree, }
+\item[{{\bf Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_a99af44e3e14587394b24a1b545d7da0d}{}\label{rbtree_8h_a99af44e3e14587394b24a1b545d7da0d}
+
+
+Inserts as if into a B\+ST tree. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & tree into which the node is to be inserted \\
+\hline
+\mbox{\tt in}  & {\em node} & node to be inserted \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+\index{rbtree.\+h@{rbtree.\+h}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{is\+Empty(\+R\+B\+Tree $\ast$rbtree)}{isEmpty(RBTree *rbtree)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool is\+Empty (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{rbtree_8h_ac50136d3c440fdfe2a043e18039aee7b}{}\label{rbtree_8h_ac50136d3c440fdfe2a043e18039aee7b}
+
+
+Checks if the \hyperlink{structRBTree}{R\+B\+Tree} is empty. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & a instance of a \hyperlink{structRBTree}{R\+B\+Tree} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the rbtree is empty 
+\end{DoxyReturn}
+\index{rbtree.\+h@{rbtree.\+h}!is\+Inserted@{is\+Inserted}}
+\index{is\+Inserted@{is\+Inserted}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{is\+Inserted(\+R\+B\+Tree $\ast$rbtree, Node $\ast$node)}{isInserted(RBTree *rbtree, Node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool is\+Inserted (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree, }
+\item[{{\bf Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{rbtree_8h_a14654e798cb2d899c43e71233a574017}{}\label{rbtree_8h_a14654e798cb2d899c43e71233a574017}
+
+
+Checks if a node was inserted into a \hyperlink{structRBTree}{R\+B\+Tree}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & the \hyperlink{structRBTree}{R\+B\+Tree} where we check if the node is inserted \\
+\hline
+\mbox{\tt in}  & {\em node} & node that we check if it was inserted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the node is inserted into this rbtree 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+\index{rbtree.\+h@{rbtree.\+h}!new\+R\+B\+Tree@{new\+R\+B\+Tree}}
+\index{new\+R\+B\+Tree@{new\+R\+B\+Tree}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{new\+R\+B\+Tree()}{newRBTree()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf R\+B\+Tree}$\ast$ new\+R\+B\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{rbtree_8h_af924e3dc59400b101a98d70c13fca982}{}\label{rbtree_8h_af924e3dc59400b101a98d70c13fca982}
+
+
+Constructs a new instance of a \hyperlink{structRBTree}{R\+B\+Tree}. 
+
+\begin{DoxyReturn}{Returns}
+a new instance of a red black tree 
+\end{DoxyReturn}
+\index{rbtree.\+h@{rbtree.\+h}!print\+R\+B\+Tree\+P\+LR@{print\+R\+B\+Tree\+P\+LR}}
+\index{print\+R\+B\+Tree\+P\+LR@{print\+R\+B\+Tree\+P\+LR}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{print\+R\+B\+Tree\+P\+L\+R(\+R\+B\+Tree $\ast$rbtree)}{printRBTreePLR(RBTree *rbtree)}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+R\+B\+Tree\+P\+LR (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_a4ffb5c0698ec53f7b1d74ee2313c0c26}{}\label{rbtree_8h_a4ffb5c0698ec53f7b1d74ee2313c0c26}
+
+
+Prints the rbtree in preorder left right. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & tree to be printed \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+\index{rbtree.\+h@{rbtree.\+h}!print\+Tree\+P\+LR@{print\+Tree\+P\+LR}}
+\index{print\+Tree\+P\+LR@{print\+Tree\+P\+LR}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{print\+Tree\+P\+L\+R(\+Node $\ast$node)}{printTreePLR(Node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Tree\+P\+LR (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_afca91c531c7215b2c2403b5c7a925bee}{}\label{rbtree_8h_afca91c531c7215b2c2403b5c7a925bee}
+
+
+Prints the node in preorder left right. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em node} & node to be printed \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+% FIG 7
+
+
+\index{rbtree.\+h@{rbtree.\+h}!repair\+In\+Loop@{repair\+In\+Loop}}
+\index{repair\+In\+Loop@{repair\+In\+Loop}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{repair\+In\+Loop(\+R\+B\+Tree $\ast$rbtree, Node $\ast$node)}{repairInLoop(RBTree *rbtree, Node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void repair\+In\+Loop (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree, }
+\item[{{\bf Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_aee478c60a6e2a7aa19df9e768af98164}{}\label{rbtree_8h_aee478c60a6e2a7aa19df9e768af98164}
+
+
+Repairs in loop the violation after deleting a node. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & tree to be repaired \\
+\hline
+\mbox{\tt in}  & {\em node} & node that was changed \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+% FIG 8
+
+
+\index{rbtree.\+h@{rbtree.\+h}!rotate\+Left@{rotate\+Left}}
+\index{rotate\+Left@{rotate\+Left}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{rotate\+Left(\+R\+B\+Tree $\ast$rbtree, Node $\ast$node)}{rotateLeft(RBTree *rbtree, Node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void rotate\+Left (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree, }
+\item[{{\bf Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_a9cfb84db458308313c0af58f6604eb70}{}\label{rbtree_8h_a9cfb84db458308313c0af58f6604eb70}
+
+
+Rotates the tree left in the node position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & tree to be rotated \\
+\hline
+\mbox{\tt in}  & {\em node} & node to be rotated \\
+\hline
+\end{DoxyParams}
+\index{rbtree.\+h@{rbtree.\+h}!rotate\+Right@{rotate\+Right}}
+\index{rotate\+Right@{rotate\+Right}!rbtree.\+h@{rbtree.\+h}}
+\subsubsection[{\texorpdfstring{rotate\+Right(\+R\+B\+Tree $\ast$rbtree, Node $\ast$node)}{rotateRight(RBTree *rbtree, Node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void rotate\+Right (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Tree} $\ast$}]{rbtree, }
+\item[{{\bf Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{rbtree_8h_ab86ad84d2aac4d869329b8fd9e6367ba}{}\label{rbtree_8h_ab86ad84d2aac4d869329b8fd9e6367ba}
+
+
+Rotates the tree right in the node position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rbtree} & tree to be rotated \\
+\hline
+\mbox{\tt in}  & {\em node} & node to be rotated \\
+\hline
+\end{DoxyParams}

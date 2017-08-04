@@ -1,0 +1,2 @@
+Options: 
+CMake: 3.7.2@/media/marian/352A14ADEA097CBE/working environment/Studia/clion/clion-2017.1.2/bin/cmake/bin/cmake

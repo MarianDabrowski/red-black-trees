@@ -1,0 +1,18 @@
+digraph "insert"
+{
+  edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
+  node [fontname="Verdana",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="insert",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node2 [label="newNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$node_8h.html#ae6300c950be27914e8ae7361cc247a76",tooltip="Constructs a new instance of a node. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node3 [label="insertBST",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#a99af44e3e14587394b24a1b545d7da0d",tooltip="Inserts as if into a BST tree. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node4 [label="isInserted",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#a14654e798cb2d899c43e71233a574017",tooltip="Checks if a node was inserted into a RBTree. "];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node4 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node5 [label="fixViolation",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$rbtree_8h.html#a818edf049469623dfa9032500389d38e",tooltip="Fixes the violation after inserting a node. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+}

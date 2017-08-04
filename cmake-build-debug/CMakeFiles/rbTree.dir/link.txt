@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/rbTree.dir/src/rbtree.c.o CMakeFiles/rbTree.dir/src/node.c.o CMakeFiles/rbTree.dir/src/main.c.o  -o rbTree 
