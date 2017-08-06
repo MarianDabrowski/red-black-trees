@@ -1,0 +1,5 @@
+mkdir release
+cd release
+cmake ..
+make
+make doc

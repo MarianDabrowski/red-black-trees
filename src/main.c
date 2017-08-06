@@ -6,7 +6,7 @@
 int main(void)
 {
 	RBTree *rbtree = newRBTree();
-	for(int i = 0; i < 12; ++i) insert(rbtree, rand() % 100);
+	for(int i = 0; i < 1; ++i) insert(rbtree, rand() % 100);
 	printRBTreePLR(rbtree);
 
 	deleteNode(rbtree, 83);
